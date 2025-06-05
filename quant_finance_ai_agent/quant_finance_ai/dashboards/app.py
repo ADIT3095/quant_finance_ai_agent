@@ -1,5 +1,9 @@
-import streamlit as st
+import sys
+import os
 from agent.command_parser import parse_and_execute
+
+import streamlit as st
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 st.title("Quant Finance AI Agent")
 
